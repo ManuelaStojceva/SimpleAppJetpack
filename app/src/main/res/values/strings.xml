@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleAppJetpack</string>
+    <string name="ApiCall_weather">weather</string>
+    <string name="ErrorMsg">We are sorry, something went wrong!</string>
+    <string name="SearchDescTxt">You can search the weather for Capital City\'s in Europe</string>
+    <string name="SearchBtn">SEARCH</string>
+    <string name="HintTxt">City Name</string>
+    <string name="WeatherDesc">Geo coords: <font color='#000'>[ %1$s , %2$s ]</font></string>
+    <string name="WeatherDetailDesc">%1$s °С <font color='#000'> temperature from </font> %2$s to %3$s, wind %4$s m/s, %5$s hpa</string>
+    <string name="WeaterListTemp">%1$s °С </string>
+</resources>

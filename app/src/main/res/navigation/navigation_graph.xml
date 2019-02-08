@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/detailWeatherFragment"
+        android:name="test.com.simpleappjetpack.ui.main.DetailWeatherFragment"
+        android:label="DetailWeatherFragment"
+        tools:layout="@layout/detail_weather_fragment">
+        <argument
+            android:name="cityId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailWeatherFragment_to_weatherNextDaysFragment"
+            app:destination="@id/weatherNextDaysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="test.com.simpleappjetpack.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/toDetailWeatherFragment"
+            app:destination="@id/detailWeatherFragment" />
+    </fragment>
+    <argument
+        android:name="cityId"
+        android:defaultValue="0"
+        app:argType="integer" />
+    <fragment
+        android:id="@+id/weatherNextDaysFragment"
+        android:name="test.com.simpleappjetpack.ui.main.WeatherNextDaysFragment"
+        android:label="WeatherNextDaysFragment"
+        tools:layout="@layout/weather_list">
+        <argument
+            android:name="cityId"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action android:id="@+id/toWeatherNextDays"
+            app:destination="@id/weatherNextDaysFragment"/>
+    </fragment>
+</navigation>

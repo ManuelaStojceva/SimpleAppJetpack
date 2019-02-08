@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/imagIconWeather"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="36dp"
+        android:text="Skopje"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgIconCountry"
+        app:layout_constraintEnd_toStartOf="@+id/txtDesc"
+        app:layout_constraintStart_toStartOf="@+id/txtCountry"
+        app:layout_constraintTop_toBottomOf="@+id/imagIconWeather" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="92dp"
+        android:text="MK"
+        app:layout_constraintEnd_toStartOf="@+id/imgIconCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCity" />
+
+    <ImageView
+        android:id="@+id/imgIconCountry"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDetailDesc"
+        app:layout_constraintEnd_toStartOf="@+id/txtDesc"
+        app:layout_constraintStart_toEndOf="@+id/txtCountry"
+        app:layout_constraintTop_toBottomOf="@+id/txtCity"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text="Cloudy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgIconCountry"
+        app:layout_constraintTop_toBottomOf="@+id/txtCity" />
+
+    <TextView
+        android:id="@+id/txtDetailDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txtGeoLoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIconCountry" />
+
+    <TextView
+        android:id="@+id/txtGeoLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="39dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailDesc" />
+
+    <Button
+        android:id="@+id/btnShowMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Show More"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGeoLoc" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+
+    <TextView
+        android:id="@+id/messageDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/SearchDescTxt"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/searchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_gravity="center"
+        android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+        android:inputType="text"
+        android:hint="@string/HintTxt"
+      />
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="@string/SearchBtn"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
